@@ -4,26 +4,30 @@
   box-sizing: border-box;
 }
 
+ html{
+  font-size: 62.5%;
+} 
+
 .container {
-  width: 980px;
+  width: 98.0rem;
   margin: 0 auto;
   /* background-color: #e7f5ff; */
-  border-top: 8px solid #ffffff;
+  border-top: 0.8rem solid #ffffff;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
-  margin-bottom: 128px;
+  height: 4.8rem;
+  margin-bottom: 12.8rem;
   /* background-color: #81c1f5; */
   border-radius: 8px;
 }
 
 .heading-font {
   font-family: inter;
-  font-size: 32px;
+  font-size: 2.4rem;
   font-weight: bolder;
   color: #343a40;
 
@@ -35,7 +39,7 @@ a {
 }
 .nav-fonts {
   font-family: inter;
-  font-size: 16px;
+  font-size: 1.4rem;
   /* font-weight: bold; */
   font-weight: 30;
   color: #343a40;
@@ -43,7 +47,7 @@ a {
 }
 
 .btn- {
-  padding: 6px 28px;
+  padding: 0.6rem 2.8rem;
   /* background-color: #e9ecef; */
   border-radius: 100px;
 }
@@ -55,17 +59,26 @@ a {
   /* align-items: center; */
   gap: 10px;
   display: flex;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 section {
-  margin-bottom: 142px;
+  margin-bottom: 14.2rem;
 }
 
 .title-font {
   font-family: inter;
-  font-size: 28px;
-  color: #343a40;
+  font-size: 2.8rem;
+  color: #495057;
+  font-weight: 600;
+
+  text-transform: capitalize;
+}
+
+.title-font-primary{
+  font-family: inter;
+  font-size: 2.8rem;
+  color: #495057;
   font-weight: 400;
 
   text-transform: capitalize;
@@ -73,11 +86,11 @@ section {
 
 .title-font-sub {
   font-family: inter;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #868e96;
   font-weight: 400;
 
-  margin-top: 4px;
+  margin-top: 0.4rem;
   text-transform: capitalize;
 }
 
@@ -85,12 +98,39 @@ section {
   border-bottom: 1px solid #e9ecef;
 }
 
+.main-nav{
+
+  margin-bottom: 1.0rem;
+  display: flex;
+  gap:2.4rem;
+}
+
+
+.main-nav-fonts:link, .main-nav-fonts:visited{
+  color:#495057;
+  font-family: inter;
+  font-weight: 600;
+  font-size:1.8rem;
+  /* text-transform: uppercase; */
+  /* text-decoration: underline; */
+
+  /* background-color: #dee2e6; */
+  padding:8px;
+  border-radius: 24px;
+}
+
+.main-nav-fonts:hover{
+  background-color: #e9ecef;
+}
+
+
 .main-sub-heading {
   font-family: inter;
-  font-size: 28px;
+  font-size: 3.0rem;
   color: #343a40;
-  font-weight: 500;
-  text-transform: capitalize;
+  font-weight: 400;
+  margin-top:30px;
+
 }
 
 .center-flex {
@@ -142,18 +182,115 @@ section {
   color: #343a40;;
   margin-top:30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start
 }
 
-.font-box-border{
-  border: 2px solid #868e96 ;
-  padding:20px;
+.fonts-table-flex div{
+  background-color: #f8f9fa;
+  height: 300px;
+  padding:25px;
+  /* border-radius: 18px; */
+  box-shadow: 1px 1px 10px #343a402d;
+
+  user-select: auto; /* Standard syntax */
+}
+
+.fonts-table-flex div:hover{
+  background-color: #ffffff;
 }
 
 .guideline{
+  font-size: 1.5rem;
   gap:12px;
   padding-left: 30px;
   font-family: inter;
   /* letter-spacing: 1.2; */
+}
+
+/*color info*/
+
+.color-info{
+  
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem;
+}
+
+
+.color-info-box{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 3.0rem;
+
+}
+
+.color-box{
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+
+}
+
+.red{
+  background-color: #ff6b6b;
+}
+
+.orange{
+  background-color: #ff922b
+}
+
+.yellow{
+  background-color: #fcc419
+}
+.green{
+  background-color: #51cf66
+}
+.blue{
+  background-color: #339af0
+}
+.purple{
+  background-color: purple;
+}
+.pink{
+  background-color: #f06595
+}
+.brown{
+  background-color: brown;
+}
+.black{
+  background-color: #343a40;
+}
+
+
+.color-note{
+  font-size: 1.6rem;
+  color:#495057;
+  padding-left: 1.8rem;
+  font-family: inter;
+}
+
+.color-pallet-dropdown{
+  display: flex;
+  flex-direction: column;
+}
+
+.color-boxs{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  margin-bottom: 32px;;
+}
+
+.box{
+  width: 100%;
+  height: 80px;
+  background-color: red;
 }
